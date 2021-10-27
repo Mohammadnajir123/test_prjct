@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Rubik:wght@400;500;600;700;800;900&display=swap');
+body,h1,h2,h3,h4,h5,h6,p,li,a,ul,span{
+    font-family: 'Rubik', sans-serif;
+}
+.clear{
+    content: "";
+    display: block;
+
+}
+
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.coontain{
+    max-width: 1200px;
+}
+
+
+/* main css start */
+.navbar{}
+.navbar-brand{}
+.navbar-brand img{}
+.navbar-nav{}
+.navbar-nav a {
+    color: #333;
+    padding: 5px 12px;
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 3px;
+    position: relative;
+    z-index: -1;
+    display: inline-block;
+}
+.navbar-nav a::before{
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: crimson;
+
+    transition: .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+.navbar-nav a:hover:before{
+    width: 100%;
+    visibility: visible;
+    opacity: 1;
+    
+}
+.mainRight{}
+.mainRight .src {
+    margin-top: 8px;
+    border-right: 1px solid #888;
+    padding: 0px 13px;
+}
+
+.mainRight .call {
+    padding-right: 53px;
+    margin-top: 8px;
+    padding-left: 8px;
+}
+.mainRight .call .callIcon {
+    padding-right: 10px;
+    color: #2cff00;
+}
+
+.mainRight .call .callNmbr span {
+    padding: 0px 8px;
+}
+.mainRight .call .callNmbr a {
+    color: #333;
+}
+.mainRight .btn{}
+.mainRight .btn a {
+    background: crimson;
+    padding: 10px 25px;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+
+    position: relative;
+    display: inline-block;
+    z-index: -1;
+}
+.btn a :before{
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: crimson;
+    z-index: 1;
+
+    transition: .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+ .btn  a:hover:before{
+    width: 100%;
+    visibility: visible;
+    opacity: 1;
+    
+}
+/* main css start */
+
+
